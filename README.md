@@ -4,7 +4,7 @@
 
 [How to play](docs/HOW_TO_PLAY.md) · [Release history](CHANGELOG.md) · [GitHub Releases](https://github.com/lucaschen-dev/ATC-Sim/releases) · [Traffic schedules](docs/TRAFFIC_SCHEDULES.md) · [Report a bug](docs/BUG_REPORTING.md)
 
-**Current documented version: v1.1 · Build 49.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
+**Current documented version: v1.1.1 · Build 50.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
 
 This repository is the public player guide and development release archive. It contains documentation, game screenshots and fictional CSV training schedules. **The game application, installers, private source code, player saves and source-chart PDFs are not hosted here.** No public download is announced in this repository. GitHub's automatically generated “Source code” archives contain these documentation files only.
 
@@ -18,7 +18,7 @@ ATC Sim focuses on the controller's working display: dark backgrounds, compact m
 | **APP — Approach** | Sequence arrivals and departures with heading, altitude and IAS clearances; establish supported approaches and complete tower/area handoffs. |
 | **ACC — Area** | Accept arrivals, departures and overflights, maintain spacing, meet exit conditions and coordinate transfer to the next unit. |
 
-Choose free duty, a 15-minute shift, a five-aircraft completion challenge, or a 20-minute traffic-wave shift. Review recorded traffic and radio events afterward. Weather and traffic are adjustable. Endless traffic arrives gradually according to demand, airport workload and weather. CSV mode lets you supply a reviewed schedule. Contextual pilot calls, emergency coordination, precipitation echoes, terrain warnings and a satisfaction score add decisions beyond routine vectoring.
+Choose free duty, a 15-minute shift, a five-aircraft completion challenge, or a 20-minute traffic-wave shift. Review recorded traffic and radio events afterward. Weather and traffic are adjustable. Endless traffic arrives gradually according to demand, airport workload and weather. CSV mode lets you supply a reviewed schedule. Contextual pilot calls, emergency coordination, precipitation echoes, terrain warnings and a satisfaction score add decisions beyond routine vectoring. Optional cloud radio speech uses the player’s own ElevenLabs API key, Chinese/English male-voice auditions, volume and rate controls. It stays silent until configured and enabled.
 
 The airport editor and standalone clearance-delivery position are currently unavailable. They appear in older release notes as historical features.
 
@@ -26,19 +26,19 @@ The airport editor and standalone clearance-delivery position are currently unav
 
 These images show ATC Sim's own native game display. They are not concept art or screenshots from the reference games. See [screenshot provenance](docs/SCREENSHOTS.md).
 
-### Ground — Guangzhou Baiyun
+### Airport selection and approach radar
 
-![ATC Sim v1.1 ground control](assets/v1.1-ground-guangzhou.png)
+![ATC Sim v1.1.1 fictional airport cards](assets/v1.1.1-airport-cards.png)
 
-*Source-based airport geometry, restrained surface materials, physical-scale aircraft and a clearance-focused control column.*
+![ATC Sim v1.1.1 weather and aircraft labels](assets/v1.1.1-approach-weather.png)
 
-### Approach and duty review
+*Fictional airport names, monochrome painted-letter cards, blue callsigns, green flight values and continuous precipitation contours. The home screen retains its looping approach-radar video.*
 
-![ATC Sim v1.1 approach control](assets/v1.1-approach.png)
+![ATC Sim v1.1.1 ground display](assets/v1.1.1-ground.png)
 
-![ATC Sim v1.1 recorded-duty review](assets/v1.1-duty-review.png)
+*Darker pavement, subordinate parking guidance, yellow aircraft and type-relative airframe sizing. Different engine/airframe families use separate silhouettes.*
 
-*Stable heading/altitude/IAS controls, staged ILS status, and a review of traffic and radio events recorded during a duty.*
+Historical v1.1 ground and duty-review frames remain in [screenshot provenance](docs/SCREENSHOTS.md).
 
 ## Start playing
 
@@ -51,20 +51,20 @@ These images show ATC Sim's own native game display. They are not concept art or
 
 ## Airport library
 
-The current bundled library contains **19 playable airport packages**. Each has its own supported ground and air data. Supported procedures and operational stands vary by airport; a printed stand or nearby-airport symbol does not imply a complete playable package or automatic support for every procedure.
+The current bundled library contains **19 playable airport packages**, displayed under fictional names. Existing four-letter codes identify the same scenarios, routes, CSV records and saves. Names do not change navigation geometry or runway procedures. Each has its own supported ground and air data. Supported procedures and operational stands vary by airport; a printed stand or nearby-airport symbol does not imply a complete playable package or automatic support for every procedure.
 
 | ICAO | Airport | ICAO | Airport |
 |---|---|---|---|
-| ZGGG | Guangzhou Baiyun | ZULS | Lhasa Gonggar |
-| ZSSS | Shanghai Hongqiao | ZBAA | Beijing Capital |
-| ZUUU | Chengdu Shuangliu | VMMC | Macau International |
-| ZSCN | Nanchang Changbei | ZHHH | Wuhan Tianhe |
-| ZUCK | Chongqing Jiangbei | ZSHC | Hangzhou Xiaoshan |
-| ZYHB | Harbin Taiping | ZGHA | Changsha Huanghua |
-| ZHCC | Zhengzhou Xinzheng | ZSJN | Jinan Yaoqiang |
-| ZSFZ | Fuzhou Changle | VHHH | Hong Kong International |
-| RCTP | Taiwan Taoyuan International | ZSPD | Shanghai Pudong |
-| ZWWW | Urumqi Tianshan International | | |
+| ZGGG | Aster Bay | ZULS | Kora Highlands |
+| ZSSS | Valmere City | ZBAA | Nordhaven |
+| ZUUU | Monteluce | VMMC | Porto Vela |
+| ZSCN | Harrowfield | ZHHH | Bellarive |
+| ZUCK | Sierra Alta | ZSHC | Kiyora Lake |
+| ZYHB | Frostvik | ZGHA | Solterra |
+| ZHCC | Dunewick | ZSJN | Redwillow |
+| ZSFZ | Aokaze Coast | VHHH | Meridian Isles |
+| RCTP | Akari Coast | ZSPD | Luminara |
+| ZWWW | Qamar Ridge | | |
 
 ## Progress and controls
 
@@ -86,7 +86,7 @@ There is one [GitHub Release](https://github.com/lucaschen-dev/ATC-Sim/releases)
 
 Builds 5, 11, 12 and 20 are omitted because separate records could not be established. See the [complete index](CHANGELOG.md).
 
-[Version 1.1 / build 49](releases/build-049.md) adds duty modes and recorded review, refines ground detail and workstation layout, fixes stale imported geometry taking precedence over reviewed airport updates, and checks complete lateral/vertical conflict intervals. [Design study and implementation](docs/V1_1_DESIGN.md) explains the reference research and the limits of the update.
+[Version 1.1.1 / build 50](releases/build-050.md) adds fictional display names, painted-letter cards, colored radar tags and smoother weather contours. [Version 1.1 / build 49](releases/build-049.md) introduced duty modes and recorded review, refines ground detail and workstation layout, fixes stale imported geometry taking precedence over reviewed airport updates, and checks complete lateral/vertical conflict intervals. [Design study and implementation](docs/V1_1_DESIGN.md) explains the reference research and the limits of the update.
 
 ## Feedback and simulation scope
 

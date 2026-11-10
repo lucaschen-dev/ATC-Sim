@@ -1,11 +1,11 @@
 # How to play ATC Sim
 
-This guide describes **v1.1, build 49**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings; the language of a crew's radio messages may also depend on the flight's radio-language setting.
+This guide describes **v1.1.1, build 50**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings; the language of a crew's radio messages may also depend on the flight's radio-language setting.
 
 ## 1. Start a duty
 
 1. Open the game and finish the illustrated first-run tutorial. Use **Previous/Next** or the left/right arrow keys. **Finish** appears on the last page. You can reopen the tutorial later with **⌘/**.
-2. Choose **Start Game** and select an airport card using its four-letter ICAO code.
+2. Choose **Start Game** and select an airport card by its fictional display name or four-letter code. Codes and CSV/save identifiers retain their existing meaning. The card expands into the loading screen; the home menu keeps its looping radar video.
 3. Select one position. You control one position for that duty; return home to choose another.
 4. Set weather. Presets provide a starting point; cloud base, visibility, wind direction/speed, gusts, QNH and precipitation can be adjusted.
 5. Choose **Endless** traffic or import a **CSV schedule**. Start with the light preset. The requested aircraft-per-minute rate is demand, not a promise to admit every flight immediately.
@@ -42,20 +42,40 @@ Click an aircraft or its tag to open its controls. Read both the tag and the rig
 | `LOC` | Localizer lateral tracking. |
 | `GS` in the ILS status section | Glideslope capture, not groundspeed. Read the surrounding context. |
 
-Altitude uses the airport's displayed unit. Hong Kong, Macau and Taiwan use **ft**; mainland airport scenarios generally use **m**. Always check the unit beside a control. Weather wind direction uses its labeled true-direction convention; heading commands use magnetic heading.
+Altitude uses the scenario's displayed unit. Meridian Isles (`VHHH`), Porto Vela (`VMMC`) and Akari Coast (`RCTP`) use **ft**; the other bundled scenarios generally use **m**. Always check the unit beside a control. Weather wind direction uses its labeled true-direction convention; heading commands use magnetic heading.
 
 Aircraft respond over time. Entering a number is not enough: commit it using the field's **SET/Enter** action, read the response and watch the actual value approach the cleared one. Published limits or performance constraints may reject a command or govern the effective target. A change in GS alone is not evidence that an IAS instruction was ignored.
 
 ### Map and labels
 
+Owned normal callsigns use muted **blue**, flight values **green**, and neighboring/unowned traffic **violet**. Selection uses **gold**; conflict and emergency colors take priority. A captured LOC and GS still gives the aircraft its green approach indication. Ground aircraft remain yellow, with blue callsigns and neutral speed text.
+
+Precipitation uses six continuous levels from green through ochre/orange to red. Echoes move and evolve with simulated weather; ordinary cloud and fog alone do not create rain returns. The contour shapes are reused across map pans and projected at the new zoom scale. WX brightness changes presentation only.
+
+
 - Drag empty map space to pan; scroll/pinch or use the map zoom controls to change scale.
 - Drag an aircraft's tag to move it away from map text. **TAGS** restores automatic layout.
 - Use **Aircraft**, **Stand**, **Whole airport**, **Near field** or equivalent view controls when provided.
 - The green crosshair marks the pointer position. Native file-selection dialogs may use the operating system cursor.
-- Ground aircraft scale with physical aircraft dimensions and map zoom. Their text remains readable at a fixed font size.
+- Ground aircraft scale with aircraft length/wingspan and map zoom. At an overview, a common readability scale still preserves relative type sizes: a widebody is larger than a small jet. Twin-engine, four-engine, regional, business and turboprop families use distinct simplified silhouettes. Their labels remain at a readable fixed font size.
 - In **Layers**, adjust **TERRAIN** and **WX** brightness independently. This affects appearance, not weather restrictions or terrain safety checks.
 - Neighboring aircraft can use shorter tags; selecting a target exposes its full context.
 - Background fix, runway and airspace annotations are map information. They do not issue instructions.
+
+### Radio speech
+
+Cloud speech is **off by default** and requires a personal **ElevenLabs API key**. Open **Settings → Radio speech**, or the in-duty speaker panel.
+
+1. Paste your key into the concealed field and choose **Save**. The key is stored in this Mac’s Keychain, never in a save, preferences export or feedback ZIP. **Remove** deletes it.
+2. Choose **Load male voices**, then choose a voice for Chinese and English. Use native-language voices for the best accent. A manual Voice ID field is available if your key cannot list voices.
+3. Audition each language. An **Emergency audition** lets you compare urgent delivery. After a successful audition and selecting both languages, enable **Radio speech**.
+4. Adjust **Volume**, **Rate** and **Contextual urgency**. The initial rate is 1.15×. Voice choice and delivery remain subjective; the game does not guarantee actor-quality pronunciation.
+
+This integration uses ElevenLabs v3. Radio text is sent to that service and billed to the player’s account; it is not microphone input or voice-command recognition. No game audio is generated without configuration. Read [provider pricing](https://elevenlabs.io/pricing/api) and [speech API documentation](https://elevenlabs.io/docs/api-reference/text-to-speech/convert).
+
+Chinese callsigns, headings, speeds, runways and frequencies use explicit radio digit readings, including 洞 / 幺 / 两 / 拐. Heights with units use quantities. Actual transmission language follows its radio text, independently of the interface language.
+
+Only new aircraft radio events are spoken. Loading a save never replays its old log. System diagnostics stay silent; leaving/backgrounding the duty clears audio. Urgent calls supersede waiting routine calls, with a four-message queue and 20-second waiting expiry. A slow network response is discarded before playback; failures stop automatic speech rather than repeatedly retrying billable requests. Text radio and the simulation keep working. There is no repeat-last-transmission control.
 
 ## 3. GND: a departure from stand to takeoff
 
@@ -90,6 +110,9 @@ Crossing, line-up and takeoff are separate clearances. Taxi permission does not 
 The ground tag is hidden after takeoff clearance, but the aircraft's takeoff movement and runway occupancy continue to be simulated. It has not disappeared from the simulation simply because the tag is hidden.
 
 ### Arrivals and stands
+
+Dim parked aircraft represent background turnaround occupancy. They carry no control tags and do not all request pushback at startup. Bright aircraft with tags are the controlled traffic. Source-chart parking endpoints support this background display; they do not automatically become approved operational stands. Existing stand capacity, route and occupancy checks still govern playable traffic.
+
 
 Configure arrival/departure runway use in advance with the runway controls. Future flights use the allowed **ARR**, **DEP**, **MIX** or **CLOSED** roles. Closed or unsupported runways cannot be used as normal operating runways.
 

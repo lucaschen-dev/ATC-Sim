@@ -4,6 +4,9 @@ These images are actual captures of the installed game window retained from deve
 
 | Repository image | Capture | What it demonstrates |
 |---|---|---|
+| `assets/v1.1.1-airport-cards.png` | Installed v1.1.1 build 50, 2026-11-10 | Nineteen fictional airport cards with monochrome dry-paint lettering. |
+| `assets/v1.1.1-approach-weather.png` | Installed ZGGG / APP, v1.1.1 build 50, 2026-11-10 | Smooth simulated precipitation contours below colored aircraft tags and readable fixes. |
+| `assets/v1.1.1-ground.png` | Installed ZGGG / GND, v1.1.1 build 50, 2026-11-10 | Dark pavement, quieter chart guidance, type-relative aircraft and physical-scale parked turnaround scenery. |
 | `assets/v1.1-ground-guangzhou.png` | ZGGG / GND, v1.1 build 49, 2026-11-10 | Selected aircraft during approved pushback, source geometry, scale-dependent detail and terminal finish. |
 | `assets/v1.1-approach.png` | ZGGG / APP, v1.1 build 49, 2026-11-10 | An actual aircraft with LOC/GS established, target/actual IAS, approach controls and tower handoff context. |
 | `assets/v1.1-duty-review.png` | ZGGG / GND review, v1.1 build 49, 2026-11-10 | Recorded plots, actual radio events, service ratings and sampled playback controls. |

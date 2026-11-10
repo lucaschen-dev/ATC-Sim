@@ -18,3 +18,7 @@ This document accompanies **v1.1, build 49**.
 Use [bug reporting](BUG_REPORTING.md) for a reproducible problem. Public GitHub Releases are documentation records; there is no game application download attached.
 
 The v1.1 ground audit screened 19 airports in 58 overview/terminal views, and radar annotation checks covered APP and ACC at all 19. That is not a corner-by-corner validation of every real airport feature. Recorded-duty playback is sampled history, not a full simulation replay. Conflict lookahead holds present ground-track motion and caps vertical motion at the cleared altitude; future turns can change the result.
+
+## Optional cloud radio speech
+
+Speech requires a player-owned ElevenLabs key and network access. The service receives radio text and charges the player’s account. Chinese/English male voices are selected from the account or entered by Voice ID; naturalness, accent and aviation pronunciation need listening acceptance. No cloud audition was performed with a real account during build 50 verification. It is not recorded human ATC audio. Text radio remains authoritative and available without speech.

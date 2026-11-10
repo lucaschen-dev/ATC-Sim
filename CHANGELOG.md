@@ -6,6 +6,7 @@ Builds **5, 11, 12 and 20** are skipped because no independently identified deli
 
 | Build | Version | Release | Details |
 |---:|---|---|---|
+| 50 | 1.1.1 | [Fictional airports, painted cards and weather contours](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/v1.1.1) | [Notes](releases/build-050.md) |
 | 49 | 1.1 | [Duty, review and display update](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/v1.1) | [Notes](releases/build-049.md) |
 | 48 | 1.0.14 | [Taoyuan detail, source curves and aircraft scaling](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/build-048) | [Notes](releases/build-048.md) |
 | 47 | 1.0.13 | [Ground joins and map preparation](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/build-047) | [Notes](releases/build-047.md) |
