@@ -1,0 +1,21 @@
+﻿call_sign,aircraft_type,departure_icao,arrival_icao,scheduled_time_utc,stand,payload_kg,airline,radio_language
+SIA287,B789,ZGGG,WSSS,08:00,,35000,Singapore Airlines,en
+THA875,A333,VTBS,ZGGG,08:04,,36000,Thai Airways,en
+ANA426,B788,ZGGG,RJTT,08:08,,31000,All Nippon Airways,en
+JAL932,B789,RJAA,ZGGG,08:12,,35500,Japan Airlines,en
+KAL961,A332,ZGGG,RKSI,08:16,,33000,Korean Air,en
+UAE523,B77W,OMDB,ZGGG,08:20,,44000,Emirates,en
+QTR104,A359,ZGGG,OTHH,08:24,,40000,Qatar Airways,en
+THY737,B789,LTFM,ZGGG,08:28,,36000,Turkish Airlines,en
+ETH548,A359,ZGGG,HAAB,08:32,,39500,Ethiopian Airlines,en
+CPA421,A333,VHHH,ZGGG,08:36,,35000,Cathay Pacific,en
+SIA552,A359,ZGGG,WSSS,08:40,,39500,Singapore Airlines,en
+THA637,B77W,VTBS,ZGGG,08:44,,43000,Thai Airways,en
+ANA539,B789,ZGGG,RJTT,08:48,,35000,All Nippon Airways,en
+JAL470,B788,RJAA,ZGGG,08:52,,30500,Japan Airlines,en
+KAL863,B789,ZGGG,RKSI,08:56,,35500,Korean Air,en
+UAE840,B77W,OMDB,ZGGG,09:00,,44500,Emirates,en
+QTR473,B788,ZGGG,OTHH,09:04,,31000,Qatar Airways,en
+THY909,A333,LTFM,ZGGG,09:08,,36000,Turkish Airlines,en
+ETH539,B788,ZGGG,HAAB,09:12,,30500,Ethiopian Airlines,en
+CPA140,A321,VHHH,ZGGG,09:16,,19000,Cathay Pacific,en

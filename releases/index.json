@@ -1,0 +1,310 @@
+[
+  {
+    "build": 1,
+    "version": "Early development",
+    "tag": "build-001",
+    "title": "The original Baiyun ATC prototype",
+    "notes": "build-001.md"
+  },
+  {
+    "build": 2,
+    "version": "Early development",
+    "tag": "build-002",
+    "title": "Workspace and ground-routing revision",
+    "notes": "build-002.md"
+  },
+  {
+    "build": 3,
+    "version": "Early development",
+    "tag": "build-003",
+    "title": "ILS capture and surface protection",
+    "notes": "build-003.md"
+  },
+  {
+    "build": 4,
+    "version": "Early development",
+    "tag": "build-004",
+    "title": "Single-use vectors and traffic schedules",
+    "notes": "build-004.md"
+  },
+  {
+    "build": 6,
+    "version": "0.1",
+    "tag": "build-006",
+    "title": "ATC Sim identity and multi-airport foundation",
+    "notes": "build-006.md"
+  },
+  {
+    "build": 7,
+    "version": "0.1",
+    "tag": "build-007",
+    "title": "Full-chart and terrain review",
+    "notes": "build-007.md"
+  },
+  {
+    "build": 8,
+    "version": "0.1",
+    "tag": "build-008",
+    "title": "Ground cleanup and stable radar labels",
+    "notes": "build-008.md"
+  },
+  {
+    "build": 9,
+    "version": "0.1",
+    "tag": "build-009",
+    "title": "Monochrome radar and paced traffic",
+    "notes": "build-009.md"
+  },
+  {
+    "build": 10,
+    "version": "0.1",
+    "tag": "build-010",
+    "title": "Aircraft-retirement crash fix",
+    "notes": "build-010.md"
+  },
+  {
+    "build": 13,
+    "version": "0.1",
+    "tag": "build-013",
+    "title": "Fullscreen interface and adjustable weather",
+    "notes": "build-013.md"
+  },
+  {
+    "build": 14,
+    "version": "0.1",
+    "tag": "build-014",
+    "title": "Source geometry and distributed stand spawning",
+    "notes": "build-014.md"
+  },
+  {
+    "build": 15,
+    "version": "0.1",
+    "tag": "build-015",
+    "title": "Ground performance investigation",
+    "notes": "build-015.md"
+  },
+  {
+    "build": 16,
+    "version": "0.1",
+    "tag": "build-016",
+    "title": "Asynchronous map preparation and Quit",
+    "notes": "build-016.md"
+  },
+  {
+    "build": 17,
+    "version": "0.1",
+    "tag": "build-017",
+    "title": "Six more airports and airport workflow",
+    "notes": "build-017.md"
+  },
+  {
+    "build": 18,
+    "version": "0.1",
+    "tag": "build-018",
+    "title": "PDF analysis and reviewed airport imports",
+    "notes": "build-018.md"
+  },
+  {
+    "build": 19,
+    "version": "0.1",
+    "tag": "build-019",
+    "title": "Macau linework and four capital airports",
+    "notes": "build-019.md"
+  },
+  {
+    "build": 21,
+    "version": "0.1",
+    "tag": "build-021",
+    "title": "Hong Kong, Taoyuan, Pudong and Urumqi",
+    "notes": "build-021.md"
+  },
+  {
+    "build": 22,
+    "version": "0.1",
+    "tag": "build-022",
+    "title": "Ground geometry and radar display corrections",
+    "notes": "build-022.md"
+  },
+  {
+    "build": 23,
+    "version": "0.1",
+    "tag": "build-023",
+    "title": "Radar rebuild and special coordination",
+    "notes": "build-023.md"
+  },
+  {
+    "build": 24,
+    "version": "0.1",
+    "tag": "build-024",
+    "title": "Altitude units, IAS consistency and terrain visibility",
+    "notes": "build-024.md"
+  },
+  {
+    "build": 25,
+    "version": "0.1",
+    "tag": "build-025",
+    "title": "Map annotations without leader lines",
+    "notes": "build-025.md"
+  },
+  {
+    "build": 26,
+    "version": "0.1",
+    "tag": "build-026",
+    "title": "Manual neighbor transfer timing",
+    "notes": "build-026.md"
+  },
+  {
+    "build": 27,
+    "version": "0.1",
+    "tag": "build-027",
+    "title": "Nineteen-airport ground audit",
+    "notes": "build-027.md"
+  },
+  {
+    "build": 28,
+    "version": "0.1",
+    "tag": "build-028",
+    "title": "Ground color and tile coverage",
+    "notes": "build-028.md"
+  },
+  {
+    "build": 29,
+    "version": "0.1",
+    "tag": "build-029",
+    "title": "Ground simplification and calling-aircraft attention",
+    "notes": "build-029.md"
+  },
+  {
+    "build": 30,
+    "version": "0.1",
+    "tag": "build-030",
+    "title": "Source-chart line hierarchy",
+    "notes": "build-030.md"
+  },
+  {
+    "build": 31,
+    "version": "0.1",
+    "tag": "build-031",
+    "title": "Holding labels and dark ground presentation",
+    "notes": "build-031.md"
+  },
+  {
+    "build": 32,
+    "version": "0.1",
+    "tag": "build-032",
+    "title": "Source-centered pavement and terminal joins",
+    "notes": "build-032.md"
+  },
+  {
+    "build": 33,
+    "version": "0.1",
+    "tag": "build-033",
+    "title": "Conflict forecasts, tug recovery and constraint calls",
+    "notes": "build-033.md"
+  },
+  {
+    "build": 34,
+    "version": "1.0",
+    "tag": "build-034",
+    "title": "Version 1.0",
+    "notes": "build-034.md"
+  },
+  {
+    "build": 35,
+    "version": "1.0.1",
+    "tag": "build-035",
+    "title": "Approach handoff and screenshot tutorials",
+    "notes": "build-035.md"
+  },
+  {
+    "build": 36,
+    "version": "1.0.2",
+    "tag": "build-036",
+    "title": "Settings spacing and dialog language",
+    "notes": "build-036.md"
+  },
+  {
+    "build": 37,
+    "version": "1.0.3",
+    "tag": "build-037",
+    "title": "Loading artwork and runway closure checks",
+    "notes": "build-037.md"
+  },
+  {
+    "build": 38,
+    "version": "1.0.4",
+    "tag": "build-038",
+    "title": "Taxi guidance and loading fades",
+    "notes": "build-038.md"
+  },
+  {
+    "build": 39,
+    "version": "1.0.5",
+    "tag": "build-039",
+    "title": "Menu radar and simplified guidance",
+    "notes": "build-039.md"
+  },
+  {
+    "build": 40,
+    "version": "1.0.6",
+    "tag": "build-040",
+    "title": "Native approach-radar menu loop",
+    "notes": "build-040.md"
+  },
+  {
+    "build": 41,
+    "version": "1.0.7",
+    "tag": "build-041",
+    "title": "Ground joins and macOS App Sandbox",
+    "notes": "build-041.md"
+  },
+  {
+    "build": 42,
+    "version": "1.0.8",
+    "tag": "build-042",
+    "title": "Airport cards and local bug reports",
+    "notes": "build-042.md"
+  },
+  {
+    "build": 43,
+    "version": "1.0.9",
+    "tag": "build-043",
+    "title": "Ground editor revision",
+    "notes": "build-043.md"
+  },
+  {
+    "build": 44,
+    "version": "1.0.10",
+    "tag": "build-044",
+    "title": "Lhasa surface and air-position editor",
+    "notes": "build-044.md"
+  },
+  {
+    "build": 45,
+    "version": "1.0.11",
+    "tag": "build-045",
+    "title": "Runway markings and editor removal",
+    "notes": "build-045.md"
+  },
+  {
+    "build": 46,
+    "version": "1.0.12",
+    "tag": "build-046",
+    "title": "Traffic identities and menu responsiveness",
+    "notes": "build-046.md"
+  },
+  {
+    "build": 47,
+    "version": "1.0.13",
+    "tag": "build-047",
+    "title": "Ground joins and map preparation",
+    "notes": "build-047.md"
+  },
+  {
+    "build": 48,
+    "version": "1.0.14",
+    "tag": "build-048",
+    "title": "Taoyuan detail, source curves and aircraft scaling",
+    "notes": "build-048.md"
+  }
+]

@@ -1,0 +1,25 @@
+﻿call_sign,aircraft_type,departure_icao,arrival_icao,scheduled_time_utc,stand,payload_kg,airline,radio_language
+CCA3164,A321,ZBAA,VHHH,08:00,,19000,Air China,en
+CES6231,A333,ZSPD,VTBS,08:02,,36000,China Eastern Airlines,en
+KAL2049,B789,RKSI,WMKK,08:04,,35000,Korean Air,en
+CSC8571,B738,ZPPP,RCTP,08:06,,16000,Sichuan Airlines,en
+CHH8347,B788,ZUCK,VHHH,08:08,,31000,Hainan Airlines,en
+MAS2218,A359,WMKK,ZBAA,08:10,,40000,Malaysia Airlines,en
+CPA3023,A332,VHHH,ZSPD,08:12,,33500,Cathay Pacific,en
+SIA3708,B77W,WSSS,ZUUU,08:14,,44000,Singapore Airlines,en
+CPA3799,A20N,ZBAA,VHHH,08:16,,15500,Cathay Pacific,en
+THA9471,B38M,ZSPD,VTBS,08:18,,17000,Thai Airways,en
+MAS1560,B772,RKSI,WMKK,08:20,,42500,Malaysia Airlines,en
+CAL8670,A321,ZPPP,RCTP,08:22,,19000,China Airlines,en
+CPA2548,A333,ZUCK,VHHH,08:24,,36000,Cathay Pacific,en
+CCA7783,B789,WMKK,ZBAA,08:26,,35000,Air China,en
+CES3268,B738,VHHH,ZSPD,08:28,,16000,China Eastern Airlines,en
+CCA6672,B788,WSSS,ZUUU,08:30,,31000,Air China,en
+CSN3763,A359,ZBAA,VHHH,08:32,,40000,China Southern Airlines,en
+CSH5236,A332,ZSPD,VTBS,08:34,,33500,Shanghai Airlines,en
+AAR4813,B77W,RKSI,WMKK,08:36,,44000,Asiana Airlines,en
+CES6610,A20N,ZPPP,RCTP,08:38,,15500,China Eastern Airlines,en
+CSN2092,B38M,ZUCK,VHHH,08:40,,17000,China Southern Airlines,en
+XAX7389,B772,WMKK,ZBAA,08:42,,42500,AirAsia X,en
+CSH9662,A321,VHHH,ZSPD,08:44,,19000,Shanghai Airlines,en
+CSC2257,A333,WSSS,ZUUU,08:46,,36000,Sichuan Airlines,en

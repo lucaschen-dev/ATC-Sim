@@ -1,0 +1,36 @@
+name: Bug report
+description: Report an ATC Sim gameplay, display or performance problem.
+title: "[Bug]: "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version and build
+      placeholder: v1.0.14 / build 48
+    validations:
+      required: true
+  - type: input
+    id: airport
+    attributes:
+      label: Airport and position
+      placeholder: RCTP / GND
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include traffic mode, weather, simulation speed and relevant aircraft/taxiway/runway identifiers.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots and reviewed diagnostic ZIP
+      description: Export a report from the game if available. Inspect it before posting; omit personal files and source PDFs.

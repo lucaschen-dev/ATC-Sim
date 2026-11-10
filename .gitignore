@@ -1,0 +1,11 @@
+*.app/
+*.dmg
+*.pkg
+*.ipa
+*.xcarchive/
+*.dSYM/
+.build/
+DerivedData/
+*.pdf
+*.zip
+.DS_Store
