@@ -1,6 +1,6 @@
 # How to play ATC Sim
 
-This guide describes **v1.1.1, build 50**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings; the language of a crew's radio messages may also depend on the flight's radio-language setting.
+This guide describes **v1.1.2, build 51**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings; the language of a crew's radio messages may also depend on the flight's radio-language setting.
 
 ## 1. Start a duty
 
@@ -75,7 +75,7 @@ This integration uses ElevenLabs v3. Radio text is sent to that service and bill
 
 Chinese callsigns, headings, speeds, runways and frequencies use explicit radio digit readings, including 洞 / 幺 / 两 / 拐. Heights with units use quantities. Actual transmission language follows its radio text, independently of the interface language.
 
-Only new aircraft radio events are spoken. Loading a save never replays its old log. System diagnostics stay silent; leaving/backgrounding the duty clears audio. Urgent calls supersede waiting routine calls, with a four-message queue and 20-second waiting expiry. A slow network response is discarded before playback; failures stop automatic speech rather than repeatedly retrying billable requests. Text radio and the simulation keep working. There is no repeat-last-transmission control.
+Only new aircraft radio events are spoken. Loading a save never replays its old log. System diagnostics stay silent; leaving/backgrounding the duty clears audio. A new transmission immediately stops the previous transmission and cancels any pending synthesis request, across callsigns and urgency levels. A short push-to-talk click plays before the voice and a squelch tail plays when the transmission finishes. An interrupted transmission ends immediately. A slow network response is discarded before playback; failures stop automatic speech rather than repeatedly retrying billable requests. Text radio and the simulation keep working. There is no repeat-last-transmission control.
 
 ## 3. GND: a departure from stand to takeoff
 

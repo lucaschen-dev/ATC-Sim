@@ -4,7 +4,7 @@
 
 [How to play](docs/HOW_TO_PLAY.md) · [Release history](CHANGELOG.md) · [GitHub Releases](https://github.com/lucaschen-dev/ATC-Sim/releases) · [Traffic schedules](docs/TRAFFIC_SCHEDULES.md) · [Report a bug](docs/BUG_REPORTING.md)
 
-**Current documented version: v1.1.1 · Build 50.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
+**Current documented version: v1.1.2 · Build 51.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
 
 This repository is the public player guide and development release archive. It contains documentation, game screenshots and fictional CSV training schedules. **The game application, installers, private source code, player saves and source-chart PDFs are not hosted here.** No public download is announced in this repository. GitHub's automatically generated “Source code” archives contain these documentation files only.
 
@@ -86,7 +86,7 @@ There is one [GitHub Release](https://github.com/lucaschen-dev/ATC-Sim/releases)
 
 Builds 5, 11, 12 and 20 are omitted because separate records could not be established. See the [complete index](CHANGELOG.md).
 
-[Version 1.1.1 / build 50](releases/build-050.md) adds fictional display names, painted-letter cards, colored radar tags and smoother weather contours. [Version 1.1 / build 49](releases/build-049.md) introduced duty modes and recorded review, refines ground detail and workstation layout, fixes stale imported geometry taking precedence over reviewed airport updates, and checks complete lateral/vertical conflict intervals. [Design study and implementation](docs/V1_1_DESIGN.md) explains the reference research and the limits of the update.
+[Version 1.1.2 / build 51](releases/build-051.md) adds immediate interruption and push-to-talk sound effects for radio speech. [Version 1.1.1 / build 50](releases/build-050.md) adds fictional display names, painted-letter cards, colored radar tags and smoother weather contours. [Version 1.1 / build 49](releases/build-049.md) introduced duty modes and recorded review, refines ground detail and workstation layout, fixes stale imported geometry taking precedence over reviewed airport updates, and checks complete lateral/vertical conflict intervals. [Design study and implementation](docs/V1_1_DESIGN.md) explains the reference research and the limits of the update.
 
 ## Feedback and simulation scope
 

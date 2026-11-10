@@ -320,5 +320,12 @@
     "tag": "v1.1.1",
     "title": "Fictional airports, painted cards and weather contours",
     "notes": "build-050.md"
+  },
+  {
+    "build": 51,
+    "version": "1.1.2",
+    "tag": "v1.1.2",
+    "title": "Radio interruption and push-to-talk sounds",
+    "notes": "build-051.md"
   }
 ]
