@@ -1,6 +1,6 @@
 # How to play ATC Sim
 
-This guide describes **v1.0.14, build 48**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings; the language of a crew's radio messages may also depend on the flight's radio-language setting.
+This guide describes **v1.1, build 49**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings; the language of a crew's radio messages may also depend on the flight's radio-language setting.
 
 ## 1. Start a duty
 
@@ -9,9 +9,22 @@ This guide describes **v1.0.14, build 48**. Earlier release notes may mention re
 3. Select one position. You control one position for that duty; return home to choose another.
 4. Set weather. Presets provide a starting point; cloud base, visibility, wind direction/speed, gusts, QNH and precipitation can be adjusted.
 5. Choose **Endless** traffic or import a **CSV schedule**. Start with the light preset. The requested aircraft-per-minute rate is demand, not a promise to admit every flight immediately.
-6. Start control and wait for the loading screen to finish. To continue a duty, use the available resume/continue action rather than starting a replacement session.
+6. Choose a duty mode (described below), then start control and wait for the loading screen to finish. To continue a duty, use the available resume/continue action rather than starting a replacement session.
 
 Bad weather, occupied stands, runway roles, separation and in-session capacity can delay admissions. Smaller airports have lower configured workloads. Traffic should build gradually; the map is not supposed to fill to its capacity at startup.
+
+### Duty modes and review
+
+| Mode | End condition | Traffic |
+|---|---|---|
+| Free duty | End it yourself | Your selected airport/weather demand |
+| 15-minute shift | 15 simulated minutes | Your selected demand |
+| Completion challenge | Five handled aircraft | No time limit |
+| Traffic waves | 20 simulated minutes | Alternating demand, still subject to capacity and weather |
+
+A timed shift ends by pausing the scenario; it does not wait for every aircraft already on the display to finish. Simulation time acceleration also accelerates the shift timer. CSV flights retain their scheduled admission logic; traffic-wave mode is unavailable for CSV traffic.
+
+Open **… → Duty review** during play or **End duty** to finish. The review shows the existing safety, communication and coordination ratings, recorded traffic and a radio timeline. Select a time with the slider, press play for 20× playback, and filter radio events by ATC or Crew. This is a sampled record of the duty: five-second traffic samples, at most 20 minutes of trajectories and 1,200 radio events. It is not a rewindable simulation checkpoint; commands cannot be issued into the replay. A new attempt retains the traffic seed, but is not a guarantee that every later action or random event will be identical.
 
 ## 2. Read the display
 
@@ -40,6 +53,8 @@ Aircraft respond over time. Entering a number is not enough: commit it using the
 - Use **Aircraft**, **Stand**, **Whole airport**, **Near field** or equivalent view controls when provided.
 - The green crosshair marks the pointer position. Native file-selection dialogs may use the operating system cursor.
 - Ground aircraft scale with physical aircraft dimensions and map zoom. Their text remains readable at a fixed font size.
+- In **Layers**, adjust **TERRAIN** and **WX** brightness independently. This affects appearance, not weather restrictions or terrain safety checks.
+- Neighboring aircraft can use shorter tags; selecting a target exposes its full context.
 - Background fix, runway and airspace annotations are map information. They do not issue instructions.
 
 ## 3. GND: a departure from stand to takeoff
@@ -114,7 +129,7 @@ There is no universal capture altitude or speed for every airport and runway. Us
 2. **Position for the localizer.** Use a sensible intercept from the approach side with enough distance to turn, at the procedure's allowed altitude and speed. Read lateral deviation and distance in the ILS panel.
 3. **Issue ILS clearance.** If the panel shows a source-defined arming gate, continue the cleared procedure to that gate. For example, a gate may prohibit early arming even though the ILS exists.
 4. **Establish LOC.** The aircraft first follows the localizer laterally. It holds the assigned altitude while waiting for the glideslope.
-5. **Capture GS from below.** Keep the aircraft below the glideslope until it intercepts. Once captured, the simulated aircraft follows it down. Do not command an arbitrary very low altitude to force capture.
+5. **Capture GS from below.** Keep the aircraft below the glideslope until it intercepts. Once captured, the simulated aircraft follows it down. The ILS block shows independent **CLR**, **LOC** and **GS** indicators; they represent actual clearance/capture states. Do not command an arbitrary very low altitude to force capture.
 6. **Confirm both captures.** In APP the target turns green after **both LOC and GS** are captured, unless a warning color takes priority.
 7. **Complete the tower transfer.** Request handoff, wait for acceptance and then use the explicit **Transfer/Contact tower** action. Tower landing clearance is separate from ILS capture and is handled by the adjacent simulated unit.
 
@@ -178,3 +193,7 @@ Use **⌘P** to pause, **⌘S** to save and **⌘⇧H** to save and return home.
 | ⌘1 / ⌘2 / ⌘3 | Choose GND / APP / ACC from the menu when not in a duty |
 
 For a first practice session, use light traffic, approve one pushback, issue one checked taxi route and complete a departure. Then try APP with a supported ILS arrival, and ACC with one complete accept/contact/transfer cycle.
+
+## Conflict forecast in v1.1
+
+For a selected conflicting air pair, dashed projections and future positions distinguish the forecast from the cleared route. The panel shows estimated time until the lateral and vertical minima are simultaneously lost. The forecast uses current horizontal motion and altitude changes capped at the cleared level; it does not predict every future route turn or pilot action. Parallel traffic can therefore generate a forecast when vertical convergence is the problem, while a safe level-off avoids a false extrapolated conflict.

@@ -6,7 +6,7 @@ body:
     id: version
     attributes:
       label: Version and build
-      placeholder: v1.0.14 / build 48
+      placeholder: v1.1 / build 49
     validations:
       required: true
   - type: input

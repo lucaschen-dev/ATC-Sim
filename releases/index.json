@@ -306,5 +306,12 @@
     "tag": "build-048",
     "title": "Taoyuan detail, source curves and aircraft scaling",
     "notes": "build-048.md"
+  },
+  {
+    "build": 49,
+    "version": "1.1",
+    "tag": "v1.1",
+    "title": "Duty, review and display update",
+    "notes": "build-049.md"
   }
 ]

@@ -1,5 +1,7 @@
 # CSV traffic schedules
 
+In v1.1, CSV scheduling remains separate from generated demand. Free duty, timed duty and the completion challenge can use an imported schedule; traffic-wave demand applies to generated traffic, so selecting CSV replaces that mode with a timed duty. A scheduled time is a demand time, not permission to bypass occupancy, weather or spacing checks.
+
 CSV schedules let you choose the identities and planned times of simulated flights. They do not import real radar tracks or validate an airline's real published timetable. The included files are **fictional training schedules**.
 
 ## Import a schedule

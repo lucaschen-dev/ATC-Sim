@@ -4,7 +4,7 @@
 
 [How to play](docs/HOW_TO_PLAY.md) · [Release history](CHANGELOG.md) · [GitHub Releases](https://github.com/lucaschen-dev/ATC-Sim/releases) · [Traffic schedules](docs/TRAFFIC_SCHEDULES.md) · [Report a bug](docs/BUG_REPORTING.md)
 
-**Current documented version: v1.0.14 · Build 48.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
+**Current documented version: v1.1 · Build 49.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
 
 This repository is the public player guide and development release archive. It contains documentation, game screenshots and fictional CSV training schedules. **The game application, installers, private source code, player saves and source-chart PDFs are not hosted here.** No public download is announced in this repository. GitHub's automatically generated “Source code” archives contain these documentation files only.
 
@@ -18,27 +18,27 @@ ATC Sim focuses on the controller's working display: dark backgrounds, compact m
 | **APP — Approach** | Sequence arrivals and departures with heading, altitude and IAS clearances; establish supported approaches and complete tower/area handoffs. |
 | **ACC — Area** | Accept arrivals, departures and overflights, maintain spacing, meet exit conditions and coordinate transfer to the next unit. |
 
-Weather and traffic are adjustable. Endless traffic arrives gradually according to demand, airport workload and weather. CSV mode lets you supply a reviewed schedule. Contextual pilot calls, emergency coordination, precipitation echoes, terrain warnings and a satisfaction score add decisions beyond routine vectoring.
+Choose free duty, a 15-minute shift, a five-aircraft completion challenge, or a 20-minute traffic-wave shift. Review recorded traffic and radio events afterward. Weather and traffic are adjustable. Endless traffic arrives gradually according to demand, airport workload and weather. CSV mode lets you supply a reviewed schedule. Contextual pilot calls, emergency coordination, precipitation echoes, terrain warnings and a satisfaction score add decisions beyond routine vectoring.
 
 The airport editor and standalone clearance-delivery position are currently unavailable. They appear in older release notes as historical features.
 
 ## Actual game screenshots
 
-These are captures of the installed game window, not concept art. They show earlier development builds; the current build has since changed aircraft symbols, ground rendering and some controls. The screenshot language is Chinese; English is available in Settings.
+These images show ATC Sim's own native game display. They are not concept art or screenshots from the reference games. See [screenshot provenance](docs/SCREENSHOTS.md).
 
-### Ground — Shanghai Pudong
+### Ground — Guangzhou Baiyun
 
-![Installed game window showing Pudong ground control, stands, taxiway guidance and an aircraft control panel](assets/ground-pudong-build31.png)
+![ATC Sim v1.1 ground control](assets/v1.1-ground-guangzhou.png)
 
-*GND at ZSPD, build 31. Taxiway guidance, stand identifiers, runway connections and the selected-aircraft panel.*
+*Source-based airport geometry, restrained surface materials, physical-scale aircraft and a clearance-focused control column.*
 
-### Approach — Hong Kong
+### Approach and duty review
 
-![Installed game window showing Hong Kong approach radar, aircraft tags, terrain, ILS and coordination controls](assets/approach-hong-kong-build25.png)
+![ATC Sim v1.1 approach control](assets/v1.1-approach.png)
 
-*APP at VHHH, build 25. Aircraft tags, terrain contours, nearby airports, published fixes and heading/altitude/IAS controls.*
+![ATC Sim v1.1 recorded-duty review](assets/v1.1-duty-review.png)
 
-See [screenshot provenance](docs/SCREENSHOTS.md) for what these images represent.
+*Stable heading/altitude/IAS controls, staged ILS status, and a review of traffic and radio events recorded during a duty.*
 
 ## Start playing
 
@@ -86,7 +86,7 @@ There is one [GitHub Release](https://github.com/lucaschen-dev/ATC-Sim/releases)
 
 Builds 5, 11, 12 and 20 are omitted because separate records could not be established. See the [complete index](CHANGELOG.md).
 
-Latest work in build 48 restores Taoyuan ground detail and source-proven pavement, corrects reviewed Lhasa geometry and scales aircraft with map zoom. Continuous live drag/FPS acceptance remains incomplete; the published records do not claim that all stutter or visual defects have been resolved.
+[Version 1.1 / build 49](releases/build-049.md) adds duty modes and recorded review, refines ground detail and workstation layout, fixes stale imported geometry taking precedence over reviewed airport updates, and checks complete lateral/vertical conflict intervals. [Design study and implementation](docs/V1_1_DESIGN.md) explains the reference research and the limits of the update.
 
 ## Feedback and simulation scope
 
