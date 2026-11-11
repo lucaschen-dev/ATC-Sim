@@ -341,5 +341,12 @@
     "tag": "v1.1.4",
     "title": "GitHub issue reporting",
     "notes": "build-053.md"
+  },
+  {
+    "build": 54,
+    "version": "1.1.5",
+    "tag": "v1.1.5",
+    "title": "Automatic diagnostic attachments and voice selection",
+    "notes": "build-054.md"
   }
 ]

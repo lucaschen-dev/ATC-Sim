@@ -4,7 +4,7 @@
 
 [How to play](docs/HOW_TO_PLAY.md) · [Release history](CHANGELOG.md) · [GitHub Releases](https://github.com/lucaschen-dev/ATC-Sim/releases) · [Traffic schedules](docs/TRAFFIC_SCHEDULES.md) · [Report a bug](docs/BUG_REPORTING.md)
 
-**Current documented version: v1.1.4 · Build 53.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
+**Current documented version: v1.1.5 · Build 54.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
 
 This repository is the public player guide and development release archive. It contains documentation, game screenshots and fictional CSV training schedules. **The game application, installers, private source code, player saves and source-chart PDFs are not hosted here.** No public download is announced in this repository. GitHub's automatically generated “Source code” archives contain these documentation files only.
 
@@ -86,10 +86,10 @@ There is one [GitHub Release](https://github.com/lucaschen-dev/ATC-Sim/releases)
 
 Builds 5, 11, 12 and 20 are omitted because separate records could not be established. See the [complete index](CHANGELOG.md).
 
-[Version 1.1.4 / build 53](releases/build-053.md) opens a prefilled GitHub bug form and prepares a diagnostic ZIP. [Version 1.1.3 / build 52](releases/build-052.md) improves radio settings, request pacing, sound effects and ground display. [Version 1.1.2 / build 51](releases/build-051.md) adds immediate interruption and push-to-talk sound effects for radio speech. [Version 1.1.1 / build 50](releases/build-050.md) adds fictional display names, painted-letter cards, colored radar tags and smoother weather contours. [Version 1.1 / build 49](releases/build-049.md) introduced duty modes and recorded review, refines ground detail and workstation layout, fixes stale imported geometry taking precedence over reviewed airport updates, and checks complete lateral/vertical conflict intervals. [Design study and implementation](docs/V1_1_DESIGN.md) explains the reference research and the limits of the update.
+[Version 1.1.5 / build 54](releases/build-054.md) adds automatic GitHub attachments and restores voice selection across launches. [Version 1.1.4 / build 53](releases/build-053.md) opens a prefilled GitHub bug form and prepares a diagnostic ZIP. [Version 1.1.3 / build 52](releases/build-052.md) improves radio settings, request pacing, sound effects and ground display. [Version 1.1.2 / build 51](releases/build-051.md) adds immediate interruption and push-to-talk sound effects for radio speech. [Version 1.1.1 / build 50](releases/build-050.md) adds fictional display names, painted-letter cards, colored radar tags and smoother weather contours. [Version 1.1 / build 49](releases/build-049.md) introduced duty modes and recorded review, refines ground detail and workstation layout, fixes stale imported geometry taking precedence over reviewed airport updates, and checks complete lateral/vertical conflict intervals. [Design study and implementation](docs/V1_1_DESIGN.md) explains the reference research and the limits of the update.
 
 ## Feedback and simulation scope
 
-Use **Report a Bug** in the game, enter the problem, and choose **Report on GitHub**. The game prepares the ZIP and opens a prefilled form. Attach the reviewed ZIP in the browser, then submit the issue. See [bug-reporting steps](docs/BUG_REPORTING.md).
+Use **Report a Bug** in the game, enter the problem, and choose **Report on GitHub**. The game opens the prefilled GitHub form in its own window and automatically attaches the ZIP. Sign in if prompted, review the draft, then select **Create**. See [bug-reporting steps](docs/BUG_REPORTING.md).
 
 ATC Sim is an entertainment simulation. Chart-derived geometry and real elevation data are combined with simplified flight models, fictional training sectors and simulated traffic/weather. Data is not maintained as a live AIP, NOTAM, METAR, radar feed or operational ATC service. See [known limitations](docs/KNOWN_LIMITATIONS.md).

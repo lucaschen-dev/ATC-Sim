@@ -3,8 +3,8 @@
 ## Open a GitHub report
 
 1. Open **Report a Bug** from the main menu or an active duty.
-2. Describe the problem and choose **Report on GitHub**. The game prepares a ZIP and opens a draft with the version, position and problem description filled in.
-3. Drag the prepared ZIP into GitHub's **Diagnostic ZIP or screenshots** field, or use **Show in Finder** to locate it. Review the public issue and submit it in GitHub.
+2. Describe the problem and choose **Report on GitHub**. The game opens the prefilled issue form in an in-app GitHub window. Sign in to GitHub there if prompted.
+3. Wait for **ZIP attached**, review the issue, then select **Create**.
 
 Use **Export ZIP** to save a local copy. The archive contains the description, app and macOS versions, and the available game diagnostics from the last ten minutes. It excludes account keys and save files. Long descriptions are included in full inside the ZIP.
 

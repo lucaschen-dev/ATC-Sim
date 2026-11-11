@@ -6,6 +6,7 @@ Builds **5, 11, 12 and 20** are skipped because no independently identified deli
 
 | Build | Version | Release | Details |
 |---:|---|---|---|
+| 54 | 1.1.5 | [Automatic diagnostic attachments and voice selection](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/v1.1.5) | [Notes](releases/build-054.md) |
 | 53 | 1.1.4 | [GitHub issue reporting](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/v1.1.4) | [Notes](releases/build-053.md) |
 | 52 | 1.1.3 | [Low-latency radio and ground display](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/v1.1.3) | [Notes](releases/build-052.md) |
 | 51 | 1.1.2 | [Radio interruption and push-to-talk sounds](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/v1.1.2) | [Notes](releases/build-051.md) |

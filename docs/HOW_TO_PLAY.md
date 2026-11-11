@@ -1,6 +1,6 @@
 # How to play ATC Sim
 
-This guide describes **v1.1.4, build 53**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings; the language of a crew's radio messages may also depend on the flight's radio-language setting.
+This guide describes **v1.1.5, build 54**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings; the language of a crew's radio messages may also depend on the flight's radio-language setting.
 
 ## 1. Start a duty
 
@@ -67,7 +67,7 @@ Precipitation uses six continuous levels from green through ochre/orange to red.
 Cloud speech is **off by default** and requires a personal **ElevenLabs API key**. Open **Settings → Radio speech**, or the in-duty speaker panel.
 
 1. Paste your key into the concealed field and choose **Save**. The key is stored in this Mac’s Keychain, never in a save, preferences export or feedback ZIP. **Remove** deletes it.
-2. Choose **Load male voices**, then choose a voice for Chinese and English. Use native-language voices for the best accent. A manual Voice ID field is available if your key cannot list voices.
+2. Choose a voice for Chinese and English. Available voices load automatically when needed, and **Refresh voices** updates the list. A manual Voice ID field is available if your key lacks the Voices read permission.
 3. Audition each language. An **Emergency audition** lets you compare urgent delivery. Turn on **Radio speech** at the top of the panel. The switch keeps your preference across restarts, setup changes and temporary service errors.
 4. Adjust **Volume**, **Rate** and **Contextual urgency**. The initial rate is 1.15×. Voice choice and delivery remain subjective; the game does not guarantee actor-quality pronunciation.
 
