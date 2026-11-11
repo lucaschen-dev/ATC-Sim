@@ -1,6 +1,6 @@
 # How to play ATC Sim
 
-This guide describes **v1.1.2, build 51**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings; the language of a crew's radio messages may also depend on the flight's radio-language setting.
+This guide describes **v1.1.3, build 52**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings; the language of a crew's radio messages may also depend on the flight's radio-language setting.
 
 ## 1. Start a duty
 
@@ -68,14 +68,14 @@ Cloud speech is **off by default** and requires a personal **ElevenLabs API key*
 
 1. Paste your key into the concealed field and choose **Save**. The key is stored in this Mac’s Keychain, never in a save, preferences export or feedback ZIP. **Remove** deletes it.
 2. Choose **Load male voices**, then choose a voice for Chinese and English. Use native-language voices for the best accent. A manual Voice ID field is available if your key cannot list voices.
-3. Audition each language. An **Emergency audition** lets you compare urgent delivery. After a successful audition and selecting both languages, enable **Radio speech**.
+3. Audition each language. An **Emergency audition** lets you compare urgent delivery. Turn on **Radio speech** at the top of the panel. The switch keeps your preference across restarts, setup changes and temporary service errors.
 4. Adjust **Volume**, **Rate** and **Contextual urgency**. The initial rate is 1.15×. Voice choice and delivery remain subjective; the game does not guarantee actor-quality pronunciation.
 
-This integration uses ElevenLabs v3. Radio text is sent to that service and billed to the player’s account; it is not microphone input or voice-command recognition. No game audio is generated without configuration. Read [provider pricing](https://elevenlabs.io/pricing/api) and [speech API documentation](https://elevenlabs.io/docs/api-reference/text-to-speech/convert).
+The default speech model is **v4 Turbo (low latency)**. Choose **Eleven v3** in the model menu for its delivery style. Playback speed supports up to 2×. Radio text is sent to that service and billed to the player’s account; it is not microphone input or voice-command recognition. No game audio is generated without configuration. Read [provider pricing](https://elevenlabs.io/pricing/api) and [speech API documentation](https://elevenlabs.io/docs/api-reference/text-to-speech/convert).
 
 Chinese callsigns, headings, speeds, runways and frequencies use explicit radio digit readings, including 洞 / 幺 / 两 / 拐. Heights with units use quantities. Actual transmission language follows its radio text, independently of the interface language.
 
-Only new aircraft radio events are spoken. Loading a save never replays its old log. System diagnostics stay silent; leaving/backgrounding the duty clears audio. A new transmission immediately stops the previous transmission and cancels any pending synthesis request, across callsigns and urgency levels. A short push-to-talk click plays before the voice and a squelch tail plays when the transmission finishes. An interrupted transmission ends immediately. A slow network response is discarded before playback; failures stop automatic speech rather than repeatedly retrying billable requests. Text radio and the simulation keep working. There is no repeat-last-transmission control.
+Only new aircraft radio events are spoken. Loading a save never replays its old log. System diagnostics stay silent; leaving/backgrounding the duty clears audio. A new transmission immediately stops the previous playback and replaces any waiting transmission, across callsigns and urgency levels. One synthesis request can be in flight at a time. The app discards superseded audio and pauses new requests after rate limiting. It resumes with fresh transmissions after the wait. Expired or failed calls are skipped. A quiet push-to-talk click precedes the voice and a short squelch tail follows a completed transmission. Text radio and the simulation keep working. There is no repeat-last-transmission control.
 
 ## 3. GND: a departure from stand to takeoff
 
