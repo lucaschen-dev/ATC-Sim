@@ -1,6 +1,6 @@
 # How to play ATC Sim
 
-This guide describes **v1.1.5, build 54**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings; the language of a crew's radio messages may also depend on the flight's radio-language setting.
+This guide describes **v1.1.6, build 55**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings. The language of a crew's radio messages also depends on the flight's radio-language setting.
 
 ## 1. Start a duty
 

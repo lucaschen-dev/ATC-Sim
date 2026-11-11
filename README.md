@@ -4,7 +4,7 @@
 
 [How to play](docs/HOW_TO_PLAY.md) · [Release history](CHANGELOG.md) · [GitHub Releases](https://github.com/lucaschen-dev/ATC-Sim/releases) · [Traffic schedules](docs/TRAFFIC_SCHEDULES.md) · [Report a bug](docs/BUG_REPORTING.md)
 
-**Current documented version: v1.1.5 · Build 54.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
+**Current documented version: v1.1.6 · Build 55.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
 
 This repository is the public player guide and development release archive. It contains documentation, game screenshots and fictional CSV training schedules. **The game application, installers, private source code, player saves and source-chart PDFs are not hosted here.** No public download is announced in this repository. GitHub's automatically generated “Source code” archives contain these documentation files only.
 
@@ -51,7 +51,7 @@ Historical v1.1 ground and duty-review frames remain in [screenshot provenance](
 
 ## Airport library
 
-The current bundled library contains **19 playable airport packages**, displayed under fictional names. Existing four-letter codes identify the same scenarios, routes, CSV records and saves. Names do not change navigation geometry or runway procedures. Each has its own supported ground and air data. Supported procedures and operational stands vary by airport; a printed stand or nearby-airport symbol does not imply a complete playable package or automatic support for every procedure.
+The current bundled library contains **20 playable airport packages**, displayed under fictional names. Existing four-letter codes identify the same scenarios, routes, CSV records and saves. Each airport has its own supported ground and air data. Available procedures and operational stands vary by airport.
 
 | ICAO | Airport | ICAO | Airport |
 |---|---|---|---|
@@ -64,7 +64,7 @@ The current bundled library contains **19 playable airport packages**, displayed
 | ZHCC | Dunewick | ZSJN | Redwillow |
 | ZSFZ | Aokaze Coast | VHHH | Meridian Isles |
 | RCTP | Akari Coast | ZSPD | Luminara |
-| ZWWW | Qamar Ridge | | |
+| ZWWW | Qamar Ridge | KLAX | Pacific Bluffs |
 
 ## Progress and controls
 
@@ -86,7 +86,7 @@ There is one [GitHub Release](https://github.com/lucaschen-dev/ATC-Sim/releases)
 
 Builds 5, 11, 12 and 20 are omitted because separate records could not be established. See the [complete index](CHANGELOG.md).
 
-[Version 1.1.5 / build 54](releases/build-054.md) adds automatic GitHub attachments and restores voice selection across launches. [Version 1.1.4 / build 53](releases/build-053.md) opens a prefilled GitHub bug form and prepares a diagnostic ZIP. [Version 1.1.3 / build 52](releases/build-052.md) improves radio settings, request pacing, sound effects and ground display. [Version 1.1.2 / build 51](releases/build-051.md) adds immediate interruption and push-to-talk sound effects for radio speech. [Version 1.1.1 / build 50](releases/build-050.md) adds fictional display names, painted-letter cards, colored radar tags and smoother weather contours. [Version 1.1 / build 49](releases/build-049.md) introduced duty modes and recorded review, refines ground detail and workstation layout, fixes stale imported geometry taking precedence over reviewed airport updates, and checks complete lateral/vertical conflict intervals. [Design study and implementation](docs/V1_1_DESIGN.md) explains the reference research and the limits of the update.
+[Version 1.1.6 / build 55](releases/build-055.md) adds Pacific Bluffs (KLAX), improves stand guidance and pushback, and refines Mandarin radio and the settings cursor. [Version 1.1.5 / build 54](releases/build-054.md) adds automatic GitHub attachments and restores voice selection across launches. [Version 1.1.4 / build 53](releases/build-053.md) opens a prefilled GitHub bug form and prepares a diagnostic ZIP. [Version 1.1.3 / build 52](releases/build-052.md) improves radio settings, request pacing, sound effects and ground display. [Version 1.1.2 / build 51](releases/build-051.md) adds immediate interruption and push-to-talk sound effects for radio speech. [Version 1.1.1 / build 50](releases/build-050.md) adds fictional display names, painted-letter cards, colored radar tags and smoother weather contours. [Version 1.1 / build 49](releases/build-049.md) introduced duty modes and recorded review, refines ground detail and workstation layout, fixes stale imported geometry taking precedence over reviewed airport updates, and checks complete lateral/vertical conflict intervals. [Design study and implementation](docs/V1_1_DESIGN.md) explains the reference research and the limits of the update.
 
 ## Feedback and simulation scope
 
