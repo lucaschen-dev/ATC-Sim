@@ -6,7 +6,7 @@ body:
     id: version
     attributes:
       label: Version and build
-      placeholder: v1.1.3 / build 52
+      placeholder: v1.1.4 / build 53
     validations:
       required: true
   - type: input
@@ -27,10 +27,11 @@ body:
     id: result
     attributes:
       label: Expected and actual result
-    validations:
-      required: true
-  - type: textarea
+  - type: upload
     id: evidence
     attributes:
-      label: Screenshots and reviewed diagnostic ZIP
-      description: Export a report from the game if available. Inspect it before posting; omit personal files and source PDFs.
+      label: Diagnostic ZIP or screenshots
+      description: Drop the ZIP prepared by ATC Sim here. Review the contents before sharing in this public issue.
+    validations:
+      required: false
+      accept: ".zip,.png,.jpg,.jpeg,.webp"

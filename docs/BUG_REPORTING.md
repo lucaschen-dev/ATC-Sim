@@ -1,16 +1,12 @@
 # Report a bug
 
-## Export a local report
+## Open a GitHub report
 
-1. Reproduce the problem if it is safe to do so, then pause the simulation.
-2. Open **Report a Bug** from the main menu or its available in-game menu action.
-3. Describe the airport, position, what you clicked/typed and what you expected.
-4. Choose **Export ZIP** and select a destination folder.
-5. Review the file, then attach it to a [GitHub issue](https://github.com/lucaschen-dev/ATC-Sim/issues/new/choose) if you want to share it.
+1. Open **Report a Bug** from the main menu or an active duty.
+2. Describe the problem and choose **Report on GitHub**. The game prepares a ZIP and opens a draft with the version, position and problem description filled in.
+3. Drag the prepared ZIP into GitHub's **Diagnostic ZIP or screenshots** field, or use **Show in Finder** to locate it. Review the public issue and submit it in GitHub.
 
-The ZIP includes your description, game version and the available recent game diagnostics covering roughly the last **ten minutes**. It does not automatically send anything. If the game has only just started, only the events actually recorded are available.
-
-Do not attach private documents, passwords, personal information or unreviewed player saves. The feedback ZIP is intended for diagnostics; inspect it before posting it publicly. Source-chart PDFs are not required to report a visual problem.
+Use **Export ZIP** to save a local copy. The archive contains the description, app and macOS versions, and the available game diagnostics from the last ten minutes. It excludes account keys and save files. Long descriptions are included in full inside the ZIP.
 
 ## Include enough information to reproduce it
 

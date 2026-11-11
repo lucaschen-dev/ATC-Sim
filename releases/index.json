@@ -334,5 +334,12 @@
     "tag": "v1.1.3",
     "title": "Low-latency radio and ground display",
     "notes": "build-052.md"
+  },
+  {
+    "build": 53,
+    "version": "1.1.4",
+    "tag": "v1.1.4",
+    "title": "GitHub issue reporting",
+    "notes": "build-053.md"
   }
 ]
