@@ -362,5 +362,12 @@
     "tag": "build-056",
     "title": "Ground linework and procedure lists",
     "notes": "build-056.md"
+  },
+  {
+    "build": 57,
+    "version": "1.1.6",
+    "tag": "build-057",
+    "title": "Consistent runway entry curves",
+    "notes": "build-057.md"
   }
 ]

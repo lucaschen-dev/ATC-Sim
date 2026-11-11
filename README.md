@@ -4,7 +4,7 @@
 
 [How to play](docs/HOW_TO_PLAY.md) · [Release history](CHANGELOG.md) · [GitHub Releases](https://github.com/lucaschen-dev/ATC-Sim/releases) · [Traffic schedules](docs/TRAFFIC_SCHEDULES.md) · [Report a bug](docs/BUG_REPORTING.md)
 
-**Current documented version: v1.1.6 · Build 56.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
+**Current documented version: v1.1.6 · Build 57.** The current local build targets **macOS 26 or later on Apple silicon**. The interface supports English and Simplified Chinese.
 
 This repository is the public player guide and development release archive. It contains documentation, game screenshots and fictional CSV training schedules. **The game application, installers, private source code, player saves and source-chart PDFs are not hosted here.** No public download is announced in this repository. GitHub's automatically generated “Source code” archives contain these documentation files only.
 
@@ -82,7 +82,7 @@ Sessions are saved locally. GND and the air simulation use their own scenario st
 
 ## Releases
 
-[Build 56](releases/build-056.md) refines runway and close-up stand markings, adds boxed stand identifiers, improves ground aircraft scaling, and fixes scrolling in radar procedure menus.
+[Build 57](releases/build-057.md) brings Hong Kong-style runway entry curves to the ground view. [Build 56](releases/build-056.md) refines runway and close-up stand markings, adds boxed stand identifiers, improves ground aircraft scaling, and fixes scrolling in radar procedure menus.
 
 There is one [GitHub Release](https://github.com/lucaschen-dev/ATC-Sim/releases) per documented build, with an English change list and scope notes. Build-number tags, such as `build-048`, identify documentation snapshots; they do not contain a historical application or its private source tree. Earlier development builds are marked as prereleases.
 

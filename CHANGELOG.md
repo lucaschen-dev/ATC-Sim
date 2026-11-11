@@ -6,6 +6,7 @@ Builds **5, 11, 12 and 20** are skipped because no independently identified deli
 
 | Build | Version | Release | Details |
 |---:|---|---|---|
+| 57 | 1.1.6 | [Consistent runway entry curves](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/build-057) | [Notes](releases/build-057.md) |
 | 56 | 1.1.6 | [Ground linework and procedure lists](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/build-056) | [Notes](releases/build-056.md) |
 | 55 | 1.1.6 | [Stand guidance, radio, and Pacific Bluffs](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/v1.1.6) | [Notes](releases/build-055.md) |
 | 54 | 1.1.5 | [Automatic diagnostic attachments and voice selection](https://github.com/lucaschen-dev/ATC-Sim/releases/tag/v1.1.5) | [Notes](releases/build-054.md) |
