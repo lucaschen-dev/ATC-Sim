@@ -1,6 +1,6 @@
 # How to play ATC Sim
 
-This guide describes **v1.1.6, build 55**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings. The language of a crew's radio messages also depends on the flight's radio-language setting.
+This guide describes **v1.1.6, build 56**. Earlier release notes may mention removed features. The selectable positions are **GND**, **APP** and **ACC**. Choose English in Settings. The language of a crew's radio messages also depends on the flight's radio-language setting.
 
 ## 1. Start a duty
 
@@ -110,6 +110,8 @@ Crossing, line-up and takeoff are separate clearances. Taxi permission does not 
 The ground tag is hidden after takeoff clearance, but the aircraft's takeoff movement and runway occupancy continue to be simulated. It has not disappeared from the simulation simply because the tag is hidden.
 
 ### Arrivals and stands
+
+Zoom into an apron to see stand identifiers in tinted boxes near the guide endpoints. At paired stands the primary guide can represent the shared bay.
 
 Dim parked aircraft represent background turnaround occupancy. They carry no control tags and do not all request pushback at startup. Bright aircraft with tags are the controlled traffic. Source-chart parking endpoints support this background display; they do not automatically become approved operational stands. Existing stand capacity, route and occupancy checks still govern playable traffic.
 
